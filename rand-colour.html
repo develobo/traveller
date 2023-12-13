@@ -24,5 +24,24 @@
       document.getElementById("result").innerHTML = "The colour is: " + colour;
     }
   </script>
+
+  <button onclick="rollDice()">Roll the dice</button>
+  <p id="result">The colour is: </p>
+  <script>
+    // A function that simulates rolling a dice to randomly select one of six colours
+    function rollDice() {
+      // An array of six colours
+      var colours = ["red", "orange", "yellow", "green", "blue", "purple"];
+      // A random number between 1 and 6
+      var randomNumber = Math.floor(Math.random() * 6) + 1;
+      // The index of the colour in the array
+      var colourIndex = randomNumber - 1;
+      // The selected colour
+      var colour = colours[colourIndex];
+      // Display the colour in the paragraph element with the id "result"
+      document.getElementById("result").innerHTML = "The colour is: " + colour;
+    }
+  </script>
+  
 </body>
 </html>
