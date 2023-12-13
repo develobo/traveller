@@ -8,12 +8,12 @@
   <h1>Example HTML with JavaScript</h1>
   <p>This is a simple HTML document that includes a JavaScript function to roll a dice that randomly selects one of six colours when a button is pressed.</p>
   <button onclick="rollDice()">Roll the dice</button>
-  <p id="result">The colour is: </p>
+  <p id="height">The NPC is: </p>
   <script>
     // A function that simulates rolling a dice to randomly select one of six colours
     function rollDice() {
       // An array of six colours
-      var colours = ["red", "orange", "yellow", "green", "blue", "purple"];
+      var colours = ["tall", "tall-ish", "average height", "average height", "slightly short", "short"];
       // A random number between 1 and 6
       var randomNumber = Math.floor(Math.random() * 6) + 1;
       // The index of the colour in the array
@@ -21,17 +21,17 @@
       // The selected colour
       var colour = colours[colourIndex];
       // Display the colour in the paragraph element with the id "result"
-      document.getElementById("result").innerHTML = "The colour is: " + colour;
+      document.getElementById("height").innerHTML = "The colour is: " + colour;
     }
   </script>
 
   <button onclick="rollDice()">Roll the dice</button>
-  <p id="result">The color is: </p>
+  <p id="weight">The NPC is: </p>
   <script>
     // A function that simulates rolling a dice to randomly select one of six colours
     function rollDice() {
       // An array of six colours
-      var colours = ["red", "orange", "yellow", "green", "blue", "purple"];
+      var colours = ["heavy", "well-built", "average weight", "average weight", "slim", "skinny"];
       // A random number between 1 and 6
       var randomNumber = Math.floor(Math.random() * 6) + 1;
       // The index of the colour in the array
@@ -39,7 +39,7 @@
       // The selected colour
       var colour = colours[colourIndex];
       // Display the colour in the paragraph element with the id "result"
-      document.getElementById("result").innerHTML = "The colour is: " + colour;
+      document.getElementById("weight").innerHTML = "The colour is: " + colour;
     }
   </script>
   
