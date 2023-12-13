@@ -6,12 +6,34 @@
 <body>
   <h1>Example HTML with JavaScript</h1>
   <p>This is a simple HTML document that has a JavaScript function embedded in it.</p>
-  <button onclick="sayHello()">Click me</button>
+  <button onclick="rollDice()">Click me</button>
   <script>
     // A function that displays an alert message with the text "Hello, world!"
     function sayHello() {
       alert("Hello, world!");
     }
+    Sure, I can write some code for you. 😊
+
+Here is a JavaScript function that simulates rolling a dice to randomly select one of six colours. It uses the `Math.random()` method to generate a random number between 1 and 6, and then returns the corresponding colour from an array of colours. I hope this is what you wanted. 🙌
+
+```javascript
+// A function that simulates rolling a dice to randomly select one of six colours
+function rollDice() {
+  // An array of six colours
+  var colours = ["red", "orange", "yellow", "green", "blue", "purple"];
+  // A random number between 1 and 6
+  var randomNumber = Math.floor(Math.random() * 6) + 1;
+  // The index of the colour in the array
+  var colourIndex = randomNumber - 1;
+  // The selected colour
+  var colour = colours[colourIndex];
+  // Return the colour
+  return colour;
+}
+
+// Test the function
+console.log(rollDice());
+```
   </script>
 </body>
 </html>
