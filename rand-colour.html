@@ -6,40 +6,40 @@ ht
 </head>
 <body>
   <h1>Example HTML with JavaScript</h1>
-  <p>This is a simple HTML document that includes a JavaScript function to roll a dice that randomly selects height and weight of an NPC when a button is pressed.</p>
+  <p>This is a simple JavaScript function to randomly select height and weight of an NPC when a button is pressed.</p>
   <button onclick="rollDice1()">Roll the dice</button>
   <p id="height">The NPC is: </p>
   <script>
-    // A function that simulates rolling a dice to randomly select one of six colours
+    // A function that simulates rolling a dice to randomly select height
     function rollDice1() {
-      // An array of six colours
-      var colours = ["tall", "tall-ish", "average height", "average height", "slightly short", "short"];
+      // An array of height
+      var hts = ["tall", "tall-ish", "average height", "average height", "slightly short", "short"];
       // A random number between 1 and 6
       var randomNumber = Math.floor(Math.random() * 6) + 1;
       // The index of the colour in the array
-      var colourIndex = randomNumber - 1;
+      var htIndex = randomNumber - 1;
       // The selected colour
-      var colour = colours[colourIndex];
+      var ht = hts[htIndex];
       // Display the colour in the paragraph element with the id "result"
-      document.getElementById("height").innerHTML = "The colour is: " + colour;
+      document.getElementById("height").innerHTML = "Their height is: " + ht;
     }
   </script>
 
   <button onclick="rollDice2()">Roll the dice</button>
   <p id="weight">The NPC is: </p>
   <script>
-    // A function that simulates rolling a dice to randomly select one of six colours
+    // A function that simulates rolling a dice to randomly select wt
     function rollDice2() {
-      // An array of six colours
-      var colours = ["heavy", "well-built", "average weight", "average weight", "slim", "skinny"];
+      // An array of wt
+      var wts = ["heavy", "well-built", "average weight", "average weight", "slim", "skinny"];
       // A random number between 1 and 6
-      var randomNumber = Math.floor(Math.random() * 6) + 1;
+      var randomNumber2 = Math.floor(Math.random() * 6) + 1;
       // The index of the colour in the array
-      var colourIndex = randomNumber - 1;
+      var wtIndex = randomNumber2 - 1;
       // The selected colour
-      var colour = colours[colourIndex];
+      var wt = wts[wtIndex];
       // Display the colour in the paragraph element with the id "result"
-      document.getElementById("weight").innerHTML = "The colour is: " + colour;
+      document.getElementById("weight").innerHTML = "Their weight is: " + wt;
     }
   </script>
   
