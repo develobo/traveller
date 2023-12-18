@@ -1,11 +1,10 @@
-ht
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Example HTML with JavaScript</title>
+  <title>Random NPC with JavaScript</title>
 </head>
 <body>
-  <h1>Example HTML with JavaScript</h1>
+  <h1>Random NPC with JavaScript</h1>
   <p>This is a simple JavaScript function to randomly select height and weight of an NPC when a button is pressed.</p>
   <button onclick="rollDice1()">Roll the dice</button>
   <p id="height">The NPC is: </p>
@@ -13,7 +12,7 @@ ht
     // A function that simulates rolling a dice to randomly select height
     function rollDice1() {
       // An array of height
-      var hts = ["tall", "tall-ish", "average height", "average height", "slightly short", "short"];
+      var hts = ["tall", "tall-ish", "average height", "average height", "slightly shorter than average", "short"];
       // A random number between 1 and 6
       var randomNumber = Math.floor(Math.random() * 6) + 1;
       // The index of the colour in the array
@@ -42,6 +41,13 @@ ht
       document.getElementById("weight").innerHTML = "Their weight is: " + wt;
     }
   </script>
-  
+
+  <script>
+    {
+      document.getElementById('output').innerHTML = "Recap - the NPC is " + ht + " and " + wt;
+    }
+  </script>
+ 
+  <p id="output"></p>
 </body>
 </html>
